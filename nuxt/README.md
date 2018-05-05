@@ -12,6 +12,9 @@
 
 ## Websocket Hosting
 
-1. 使用 AWS IoT 來串接使用 API Gateway 或 Lambda。
-2. 使用 [Fanout](https://fanout.io/) 的 Free Plan，但只有 500 messages / day 的免費使用量。
-3. 使用 Golang 實作 Websocket to API Gateway 或 Lambda 的 Proxy，在 EC2 上執行。也許已經 Open Source Project，需要找一找。
+不論使用何種方式實作 Websocket，都希望能夠隨時切換使用。並且要想好一個安全的身分識別驗證機制。
+
+1. 用 AWS IoT 來串接使用 API Gateway 或 Lambda。
+2. Azure 的 Web Sites 支援 WebSockets，可以研究一下怎麼使用。
+3. [Fanout](https://fanout.io/) 的 Free Plan，但只有 500 messages / day 的免費使用量。
+4. Golang 實作 Websocket to API Gateway 或 Lambda 的 Proxy，在 EC2 上執行。應該已經有 Open Source Project，需要找一找。
